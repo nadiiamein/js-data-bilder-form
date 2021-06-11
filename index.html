@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-datum-bild-form</title>
+    <link href="style.css" rel="stylesheet"> 
+</head>
+<body>
+<div id="containerAll">
+    <!-- Data -->
+
+    <div class="heuteData">
+        <h1>Herzlich willkommen in der Welt JavaScript </h1>
+        <h2>Heute ist:</h2>
+        <p id="datum"></p>
+
+    </div>
+    
+    <!-- Bilder -->
+
+    <div class="bilderAll">
+        <h3 class="bilderTitle">Die Bilder ändern sich</h3>
+        <div class="bilderItem">
+    <img src="bilder/garten1.jpg" alt="Garten" id="bild1"
+    onmouseover="austauschen(this.id, 'bilder/garten1.jpg')"
+    onmouseout="austauschen(this.id, 'bilder/garten2.jpg')">
+
+    <img src="bilder/garten3.jpg" alt="Garten" id="bild3"
+    onmouseover="austauschen(this.id, 'bilder/garten3.jpg')"
+    onmouseout="austauschen(this.id, 'bilder/garten4.jpg')">
+
+    <img src="bilder/garten5.jpg" alt="Garten" id="bild5"
+    onmouseover="austauschen(this.id, 'bilder/garten5.jpg')"
+    onmouseout="austauschen(this.id, 'bilder/garten6.jpg')">
+</div>
+</div>
+
+    <!-- Form -->
+<div class="formAll">
+    <h4 class="formTitle">Form</h4>
+    <div class="formBord">
+<form action="" onsubmit="return senden()">
+<label for="nachname">* Name: </label><br>
+<input type="text" name="nachname" id="nachname" size="35" maxlength="30"><br>
+<label for="email">* E-Mail:</label><br>
+<input type="text" name="email" id="email" size="35"  maxlength="30"><br>
+<input type="submit" value="Absenden">
+</form>
+</div>
+</div>
+
+</div>
+
+<!-- JS -->
+
+    <script src="index.js"></script>
+</body>
+</html>
